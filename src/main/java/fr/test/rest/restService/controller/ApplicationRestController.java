@@ -13,7 +13,7 @@ public class ApplicationRestController {
         return "Begin to Rest service";
     }
 
-    @RequestMapping(value = "/rest/{information}", produces = "application/json; charset=UTF-8")
+    @RequestMapping(value = "/rest/{information}")
     public InformationDto message(@PathVariable String information) {
 
         InformationDto info = new InformationDto(information, "Description " + information);
